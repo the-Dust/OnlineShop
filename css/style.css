@@ -1,0 +1,129 @@
+body
+{
+	background-color: #f8f8f8;
+}
+
+.menu
+{
+	list-style-type: none;
+}
+
+.menu a
+{
+	color: grey;
+	font-size: 18px;
+	font-family: Tahoma;
+	text-decoration: none;
+
+}
+
+.item h2
+{
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #eaeaea;
+}
+
+.item img
+{
+	padding:1px;
+    border:1px solid gray;
+	
+}
+
+.item-character
+{
+	list-style-image: url(../Images/star125.png);
+	color: #484740;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: Euphemia;
+}
+
+.short-descr
+{
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+
+.descr
+{
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+form
+{
+	width: 600px;
+}
+
+legend
+{
+	color: #484343;
+	font-size: 16px;
+	font-family: Arial;
+	font-weight: 100;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+input[type="text"]
+{
+	color: purple;
+	font-weight: 400;
+	font-family: Arial;
+	font-size: 14px;
+	text-transform: uppercase;
+	height: 30px;
+}
+
+input[placeholder="Тема"]
+{
+	width: 100%;
+	font-weight: 900;
+}
+
+input[placeholder="Email"]
+{
+	width: 50%;
+	float: right;
+}
+
+input[placeholder="Имя"]
+{
+	width: 40%;
+}
+
+.button
+{
+    background-color: silver;
+    border: none;
+    color: black;
+    padding: 15px 90px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+	width = 300px;
+}
+
+.button[value="Очистить"]
+{
+	float: right;
+}
+
+textarea
+{
+	color: navy;
+	resize: none;
+	font-family: Arial;
+	font-size: 14px;
+	width: 100%;
+	height: 300px;
+}
