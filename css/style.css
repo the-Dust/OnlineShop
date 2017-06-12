@@ -3,9 +3,18 @@ body
 	background-color: #f8f8f8;
 }
 
-.menu
+.menu, .logo
 {
 	list-style-type: none;
+	float: right;
+	position:relative;
+	margin: 10px;
+}
+
+.menu li
+{
+	display: inline-block;
+	margin: 5px;
 }
 
 a
@@ -15,7 +24,7 @@ a
 
 .menu a
 {
-	color: grey;
+	color: gainsboro;
 	font-size: 18px;
 	font-family: Tahoma;
 }
@@ -32,16 +41,17 @@ a
 	font-weight: 400;
 	background-color: #eaeaea;
 	text-align: left;
+	overflow: hidden;
 }
 
 .item table
 {
 	border: 2px solid dimgray;
-	width: 800px;
+	width: 100%;
 	border-collapse: collapse;
 }
 
-.item td
+.item td, .item th 
 {
 	border: 1px solid black;
 	padding-left: 10px;
@@ -75,6 +85,10 @@ a
     border:1px solid gray;
 	*/
 	outline:2px solid black;
+	float: left;
+	margin-left: 5px;
+	margin-right: 15px;
+	margin-bottom: 15px;
 }
 
 .item img:hover
@@ -118,14 +132,23 @@ a
 	text-align: left;
 }
 
+
+.catalog
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+
 .catalog img
 {
-	width:150px;
+	height:300px;
 }
 
 form
 {
-	width: 600px;
+	width: 100%;
 }
 
 legend
@@ -144,8 +167,13 @@ input[type="text"], input[type="email"], textarea
 	font-weight: 400;
 	font-family: Arial;
 	font-size: 14px;
-	text-transform: capitalize;
+	text-transform: none;
 	height: 30px;
+}
+
+input[placeholder="Имя"]
+{
+	text-transform: capitalize;
 }
 
 input[type="email"]:focus
@@ -176,27 +204,100 @@ input[placeholder="Имя"]
     background-color: silver;
     border: none;
     color: black;
-    padding: 15px 90px;
+    padding: 10px 27px;
+	margin-right: 30px;
     text-align: center;
     text-transform: uppercase;
     display: inline-block;
     font-size: 16px;
-}
-
-.button[value="Очистить"]
-{
-	float: right;
+	float: left;
 }
 
 textarea
 {
 	resize: none;
 	width: 100%;
-	height: 300px;
+	height: 150px;
 }
 
 .logo
 {
 	width: 141px;
 	float: left;
+	margin-left: 20px;
+}
+
+.container
+{
+	width: 67%;
+	margin: 0 auto;
+}
+
+.header
+{
+	border-bottom: 1px solid black;
+	background-color: dimgray;
+	height: 100px;
+	position:relative;
+}
+
+.content
+{
+	background-color: #E1E0E1;
+	position:relative;
+}
+
+.footer
+{
+	border-top: 1px solid black;
+	background-color: mediumturquoise;
+	height: 80px;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 20px;
+	position:relative;
+}
+
+.map
+{
+	width: 100%; 
+	height: 374px; 
+	frameborder: 0px; 
+	border: 0px;
+}
+
+.item-link
+{
+	width: 350px;
+	padding: 10px 10px;
+	white-space: normal;
+	text-align:center;
+	position: relative;
+	margin: 0;
+}
+
+.item-link a
+{
+	display: block;
+}
+
+.complete
+{
+	clear: both;
+}
+
+.cover
+{
+	height:100%;
+	width:100%;
+	position: absolute;
+	background-color: black;
+	z-index:10;
+	opacity: 0.3;
+	display: none;
+}
+
+.item-link:hover .cover
+{
+	display: block;
 }
