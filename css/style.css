@@ -6,6 +6,8 @@ body
 h1
 {
 	margin:0;
+	font-family: Tahoma;
+	font-weight: 500;
 }
 
 .menu, .logo
@@ -239,7 +241,7 @@ textarea
 
 .container
 {
-	width: 67%;
+	width: 800px;
 	margin: 0 auto;
 }
 
@@ -313,4 +315,12 @@ textarea
 .item-link:hover .cover
 {
 	display: block;
+}
+
+@media screen and (min-width: 500px) 
+{/* если окно браузера больше максимальной ширины сайта */ 
+  html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
 }
