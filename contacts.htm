@@ -7,40 +7,156 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="header">
+			<div class="header map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4779.179790100054!2d50.19717104831923!3d53.207270775742266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1498024437114" class="map-bg">
+				</iframe>
+				<div class="map-cover">
+				</div>
 				<a href="index.htm">
-					<img src="Images/logo.png" alt="logo" class="logo"/>
+					<img src="img/logo.png" alt="logo" class="logo map-logo"/>
 				</a>
-				<ul class="menu">
-					<li><a href="index.htm">Главная</a></li>
-					<li><a href="catalog.htm">Каталог</a></li>
-					<li><a href="contacts.htm">Контакты</a></li>
-				</ul>
 			</div>
 			<div class="content">
-				<h1>Напишите нам</h1>
-				<form action="mailto:sorrow256@rambler.ru" class="form">
-					<fieldset>
-						<legend>Отправка сообщения</legend>
-						<input type="text" placeholder="Имя">
-						<input type="email" placeholder="Email"><br/>
-						<input type="text" placeholder="Тема"><br/>
-						<textarea placeholder="Сообщение"></textarea><br/>
-						<input type="submit" value="Отправить" class="button">
-						<input type="reset" value="Очистить" class="button">
-					</fieldset>
-				</form>
-				<h1>Адрес</h1>
-				<ul>
-					<li><b>Телефон:</b>&nbsp;322-22-23</li>
-					<li><b>Адрес:</b>&nbsp;ТРК "Космопорт", секция 9<sup>3</sup>/<sub>4</sub>, ул. Дыбенко, 30, Самара, Самарская обл., 443086</li>
-					<li><b>Часы работы:</b>&nbsp;8:00-20:00</li>	
-					<li><b>Email:</b>&nbsp;sales@evilstrings.ru</li>
-				</ul>
-				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2389.5840513200515!2d50.19684517531512!3d53.207375568504425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1496829470091" allowfullscreen></iframe>
+				<div class="menu-col">
+					<div class="menu-top"><p>Меню</p></div>
+					<ul class="menu">
+						<a href="index.htm"><li>Главная</li></a>
+						<a href="catalog.htm"><li>Каталог</li></a>
+						<a href="contacts.htm"><li>Контакты</li></a>
+					</ul>
+					<div class="hello"><p>Мы открылись!</p></div>
+				</div>
+				<div class="content-col">
+					<div class="breadcrumbs">
+						<a href="index.htm">Главная</a><span> &raquo; </span><span class="this_page">Контакты</span>
+					</div>
+					<div class="contact-form">
+						<form action="mailto:sorrow256@rambler.ru" class="form">
+							<fieldset>
+								<p class="contacts-main">Полное имя*</p>
+								<input type="text" placeholder="иванов сергей">
+								<p class="contacts-main">email*</p>
+								<input type="email" placeholder="name@nome.com"><br/>
+								<p class="contacts-main">Компания</p>
+								<input type="text" placeholder="ваша компания (опционально)">
+								<p class="contacts-main">Тема*</p>
+								<input type="text" placeholder="информация"><br/>
+								<p class="contacts-main">Сообщение</p>
+								<textarea placeholder=""></textarea><br/>
+								<input type="submit" value="Отправить" class="button">
+							</fieldset>
+						</form>
+						<div class="vr"></div>
+					</div>
+					<div class="address">
+					<h1 class="address_h1">Адрес</h1>
+						<div class="address-place">
+							<img src="img/place.png" alt="place"/>
+							<p >
+								ТРК "Космопорт", секция 9<sup>3</sup>/<sub>4</sub>, ул. Дыбенко, 30, Самара, Самарская обл., 44308. Часы работы: 8:00-20:00
+							</p>
+						</div>
+						<div class="address-phone">
+							<img src="img/phone.png" alt="place"/>
+							<p>322-22-23</p>
+						</div>
+						<div class="address-mail">
+							<img src="img/mail.png" alt="mail"/>
+							<p>
+								sales@evilstrings.ru
+							</p>
+						</div>
+						<div class="address-note">
+							<p>
+								Если у вас есть вопросы по поводу доставки или любые другие общие вопросы, наша служба поддержки будет рада помочь вам.
+							</p>
+						</div>
+					</div>
+					<div class="empty-cat"></div>
+				</div>
+				<div class="social">
+						<a href="https://www.facebook.com" target="_blank">
+							<div class="social_logo fb">
+								<img src="img/f_icon.png" alt="facebook"/>
+							</div>
+						</a>
+						<a href="https://twitter.com" target="_blank">
+							<div class="social_logo tw">
+								<img src="img/tw_icon.png" alt="twitter"/>
+							</div>
+						</a>
+						<a href="https://ru.pinterest.com" target="_blank">
+							<div class="social_logo pin">
+								<img src="img/pin_icon.png" alt="pinterest"/>
+							</div>
+						</a>
+				</div>
 			</div>
 			<div class="footer">
-				<p>&copy;&nbsp;Все права защищены</p>
+				<div class="footer-menu">
+					<h3>Категории</h3>
+					<ul>
+						<li><a href="index.htm">Главная</a></li>
+						<li><a href="catalog.htm">Каталог</a></li>
+						<li><a href="contacts.htm">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-menu news">
+					<h3>Расылка</h3>
+					<p>Присоединись к тысячам людей, подписавшихся на наши новости</p>
+					<form action="mailto:sorrow256@rambler.ru" class="form">
+						<fieldset>
+							<input type="email" placeholder="Ваш Email">
+							<input type="submit" value="Отправить" class="button">
+						</fieldset>
+					</form>
+					<a href="https://www.mastercard.ru" target="_blank">
+						<img src="img/mastercard.png" alt="mastercard"/>
+					</a>
+					<a href="https://www.maestrocard.com" target="_blank">
+						<img src="img/maestero.png" alt="maestero"/>
+					</a>
+					<a href="https://http://www.paypal.ru" target="_blank">
+						<img src="img/paypal.png" alt="paypal"/>
+					</a>
+					<a href="https://www.discover.com" target="_blank">
+						<img src="img/discover.png" alt="discover"/>
+					</a>
+					<a href="https://www.visa.com.ru" target="_blank">
+						<img src="img/visa.png" alt="visa"/>
+					</a>
+				</div>
+				<div class="footer-menu about">
+					<h3>О нас</h3>
+					<p>Интернет-магазин гитарных струн. Работаем на рынке с  2007 года. </p>
+					<p>Мы всегда открыты для диалога и рады любому сотрудничеству. По всем интересующим вопросам обращайтесь по нашему телефону</p>
+					<p class="contacts"><b>Телефон:</b>&nbsp;322-22-23</p>
+					<p class="contacts"><b>Email:</b>&nbsp;<span>sales@evilstrings.ru</span></p>
+				</div>
+				<div class="footer-down">
+					<p>&copy;&nbsp;2017 EvilStrings. Все права защищены. Верстка - the-Dust</p>
+					<a href="https://www.facebook.com" target="_blank">
+						<img src="img/facebook.png" alt="facebook"/>
+					</a>
+					<a href="https://twitter.com" target="_blank">
+						<img src="img/twitter.png" alt="twitter"/>
+					</a>
+					<a href="https://ru.pinterest.com" target="_blank">
+						<img src="img/pinterest.png" alt="pinterest"/>
+					</a>
+					<a href="https://plus.google.com" target="_blank">
+						<img src="img/google-plus.png" alt="google-plus"/>
+					</a>
+					<a href="https://www.tumblr.com" target="_blank">
+						<img src="img/tumblr.png" alt="tumblr"/>
+					</a>
+					<a href="https://www.instagram.com" target="_blank">
+						<img src="img/instagram.png" alt="instagram"/>
+					</a>
+					<a href="http://www.rssboard.org/" target="_blank">
+						<img src="img/rss.png" alt="rss"/>
+					</a>
+				</div>
 			</div>
 		</div>
 	</body> 
