@@ -1,9 +1,40 @@
+@font-face 
+{ 
+font-family: "Roboto"; /*название для использования шрифта */
+src: url("../fonts/Roboto-Regular.ttf"); 
+font-weight: normal; 
+font-style: normal; 
+}
+
+@font-face 
+{ 
+font-family: "Roboto";
+src: url("../fonts/Roboto-MediumItalic.ttf"); 
+font-weight: normal; 
+font-style: italic; 
+}
+
+@font-face 
+{ 
+font-family: "Raleway"; 
+src: url("../fonts/Raleway-Regular.ttf"); 
+font-weight: normal; 
+font-style: normal; 
+}
+
+@font-face 
+{ 
+font-family: "Raleway";
+src: url("../fonts/Raleway-MediumItalic.ttf"); 
+font-weight: normal; 
+font-style: italic; 
+}
+
 *
 {
 	margin:0;
 	padding:0;
-	font-family: Tahoma;
-	
+	font-family: "Roboto", Tahoma;
 }
 
 a
@@ -27,7 +58,6 @@ body
 	height: 280px;
 	width: 100%;
 	background-color: #abeafa;
-	/*background-image: url(https://static1.squarespace.com/static/550ca93ae4b07f1da67111c5/t/565510ede4b02fbb0a217ae4/1448415470895/);*/
 	float: left;
 }
 
@@ -38,7 +68,6 @@ body
 	background-color: #fff51f;
 	margin-left: 130px;
 	margin-top: 50px;
-	/*font-family: Raleway;*/
 	color: #333333;
 
 }
@@ -51,6 +80,7 @@ body
 	text-transform: uppercase;
 	padding-top: 20px;
 	margin-left: 20px;
+	font-family: "Raleway", Tahoma;
 }
 
 .header div p
@@ -61,6 +91,7 @@ body
 	font-style: italic;
 	padding-top: 20px;
 	margin-left: 20px;
+	font-family: "Raleway", Tahoma;
 
 }
 
@@ -123,7 +154,8 @@ body
 	width: 940px;
 	/*height: 1495px;*/
 	margin: 0 auto;
-	/*background-color: orange;*/
+	/*прижимаем футер*/
+	min-height: calc(100vh - 280px);
 }
 
 .menu-col
@@ -155,11 +187,13 @@ ul
 .menu
 {
 	background-color: #26d2fc;
+	position: relative;
 }
 
 .menu li
 {
 	/*line-height: 36px;*/
+	color: #000000;
 	font-weight: 900;
 	padding: 12px 32px;
 }
@@ -175,6 +209,24 @@ ul
 	background-color: #333333;
 	color: white;
 }
+
+.menu-throw
+{
+	display: none;
+	width: 250px;
+	position: absolute;
+	top: 80px;
+	left: 216px;
+	z-index:1;
+	background-color: #abeafa;
+}
+
+.menu-contacts:hover  .menu-throw
+{
+	display: block;
+}
+
+
 
 .hello
 {
@@ -192,7 +244,7 @@ ul
 	width:100px;
 	text-align: left;
 	font-style: italic;
-	/*font-family: Raleway;*/
+	font-family: "Raleway", Tahoma;
 	color: #333333;
 	font-size: 20px;
 	font-weight: 800;
@@ -214,7 +266,6 @@ ul
 {
 	width: 100%;
 	height: 27px;
-	/*font-family: Roboto;*/
 	color: #989898;
 	font-size: 12px;
 	font-weight: 400;
@@ -227,7 +278,6 @@ ul
 
 .content-col h1
 { 
-	/*font-family: Roboto;*/
 	color: #707070;
 	font-size: 22px;
 	font-weight: 900;
@@ -273,7 +323,6 @@ ul
 
 .content-col .item  h3
 { 
-	/*font-family: Roboto;*/
 	color: #333333;
 	font-size: 12px;
 	font-weight: 900;
@@ -286,7 +335,6 @@ ul
 
 .content-col .item .price
 { 
-	/*font-family: Roboto;*/
 	color: #333333;
 	font-size: 14px;
 	font-weight: 900;
@@ -338,7 +386,6 @@ ul
 {
 	width: 366px;
 	font-style: normal;
-	/*font-family: Roboto;*/
 	color: #353535;
 	font-size: 19px;
 	font-weight: 700;
@@ -353,7 +400,6 @@ ul
 
 .short-descr p, .short-descr li
 {
-	/*font-family: Roboto;*/
 	color: #707070;
 	font-size: 12px;
 	font-weight: 400;
@@ -362,7 +408,6 @@ ul
 
 .short-descr h2
 {
-	/*font-family: Roboto;*/
 	color: #353535;
 	font-size: 12px;
 	font-weight: 900;
@@ -380,7 +425,6 @@ ul
 {
 	margin-top: 41px;
 	margin-bottom: 21px;
-	/*font-family: Roboto;*/
 	color: #111111;
 	font-size: 17px;
 	font-weight: 500;
@@ -396,7 +440,6 @@ ul
 	width: 105px;
 	height: 39px;
 	background-color: #fb4d01;
-	/*font-family: Roboto;*/
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: 400;
@@ -437,7 +480,6 @@ ul
 
 .description_head h2
 {
-	/*font-family: Roboto;*/
 	color: #333333;
 	font-size: 12px;
 	font-weight: 400;
@@ -481,7 +523,6 @@ ul
 
 .contacts-main
 {
-	/*font-family: Roboto;*/
 	color: #333333;
 	font-size: 12px;
 	font-weight: 400;
@@ -497,6 +538,11 @@ form
 	float: left;
 }
 
+.footer form
+{
+	margin-right:0px;
+}
+
 .content-col fieldset
 {
 	border: none;
@@ -504,7 +550,6 @@ form
 
 input[type="text"], input[type="email"], textarea
 {
-	/*font-family: Roboto;*/
 	color: #aaaaaa;
 	font-size: 12px;
 	font-weight: 400;
@@ -531,10 +576,9 @@ textarea
 	width: 105px;
 	height: 39px;
 	background-color: #26d2fc;
-	/*font-family: Roboto;*/
 	color: #000000;
-	font-size: 14px;
-	font-weight: 400;
+	font-size: 12px;
+	font-weight: 900;
 	line-height: 39px;
 	border: none;
 }
@@ -553,7 +597,6 @@ textarea
 
 .content-col .address_h1
 {
-	/*font-family: Roboto;*/
 	color: #353535;
 	font-size: 18px;
 	font-weight: 900;
@@ -593,8 +636,18 @@ textarea
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 20.8px;
-	text-decoration: underline;
 	margin-top: 15px;
+}
+
+.address-mail a
+{
+	color: inherit;
+}
+
+.address-mail a:hover, .about .contacts a:hover
+{
+	color: #26d2fc;
+	text-decoration: underline;
 }
 
 .address-note
@@ -630,7 +683,6 @@ textarea
 
 .insta-head>p
 {
-	/*font-family: Roboto;*/
 	color: #333333;
 	font-weight: 900;
 	font-style: italic;
@@ -653,6 +705,15 @@ textarea
 	justify-content: space-between;
 }
 
+.insta-body  a
+{
+	opacity: 0.5;
+}
+
+.insta-body  a:hover
+{
+	opacity: 1;
+}
 
 .insta-body  img
 {
@@ -735,7 +796,6 @@ textarea
 	margin-top: 60px;
 	margin-left: 153px;
 	float:left;
-	/*font-family: Roboto;*/
 	color: #ffffff;
 	font-size: 10px;
 	font-weight: 400;
@@ -745,7 +805,7 @@ textarea
 
 .footer-menu h3
 {
-	/*font-family: Raleway;*/
+	font-family: "Raleway", Tahoma;
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: 700;
@@ -758,11 +818,15 @@ textarea
 
 .footer-menu ul a
 {
-	/*font-family: Roboto;*/
 	color: #ffffff;
 	font-size: 10px;
 	font-weight: 400;
 	line-height: 16px;
+}
+
+.footer-menu ul a:hover
+{
+	text-decoration: underline;
 }
 
 .footer-menu p
@@ -793,7 +857,6 @@ textarea
 	height: 25px;
 	background-color: #fff51f;
 	border: 0px;
-	/*font-family: Roboto;*/
 	color: rgba(51, 51, 51, 0.45);
 	font-size: 12px;
 	font-weight: 700;
@@ -813,7 +876,6 @@ textarea
 	height: 25px;
 	background-color: #000000;
     border: none;
-	/*font-family: Roboto;*/
 	color: #ffffff;
 	font-size: 10px;
 	font-weight: 400;
@@ -841,14 +903,13 @@ textarea
 
 .about .contacts
 {
-	/*font-family: Roboto;*/
 	color: #ffffff;
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 20px;
 }
 
-.about .contacts span
+.about .contacts a
 {
 	color: #faef03;
 }
@@ -864,7 +925,6 @@ textarea
 
 .footer-down p
 {
-	/*font-family: Roboto;*/
 	color: #dad9d9;
 	font-size: 12px;
 	font-weight: 400;
@@ -887,4 +947,13 @@ textarea
 .footer-down a:hover
 {
 	background-color: #232333;
+}
+
+@media screen and (min-width: 500px) 
+{/* если окно браузера больше максимальной ширины сайта */ 
+	html 
+	{
+		margin-left: calc(100vw - 100%);
+		margin-right: 0;
+	}
 }
