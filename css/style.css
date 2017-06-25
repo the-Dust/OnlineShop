@@ -1,6 +1,6 @@
 @font-face 
 { 
-font-family: "Roboto"; /*название для использования шрифта */
+font-family: "Roboto"; 
 src: url("../fonts/Roboto-Regular.ttf"); 
 font-weight: normal; 
 font-style: normal; 
@@ -58,21 +58,22 @@ body
 	height: 280px;
 	width: 100%;
 	background-color: #abeafa;
+	background-image: url("../img/main_bg.png");
 	float: left;
 }
 
-.header div
+.header .greeting
 {
 	width: 216px;
 	height: 130px;
 	background-color: #fff51f;
 	margin-left: 130px;
-	margin-top: 50px;
+	margin-top: 20px;
 	color: #333333;
-
+	float: left;
 }
 
-.header div h1
+.header .greeting h1
 { 
 	font-size: 16px;
 	font-weight: 700;
@@ -83,7 +84,7 @@ body
 	font-family: "Raleway", Tahoma;
 }
 
-.header div p
+.header .greeting p
 { 
 	font-size: 14px;
 	font-weight: 700;
@@ -98,15 +99,46 @@ body
 .header a[href="index.htm"]
 {
 	display: block;
-	margin-left: 190px;
+	margin-left: 130px;
 	margin-top: 20px;
 	width: 141px;
+}
+
+.header .advert
+{
+	width: 251px;
+	height: 100px;
+	/*background-color: orange;*/
+	float: right;
+	margin-right: 219px;
+}
+
+.header .advert h2, .advert p
+{
+	font-family : Raleway;
+	color : #fff51f;
+}
+
+.header .advert h2
+{
+	font-size: 28px;
+	font-weight: 900;
+	line-height: 28px;
+}
+
+.header .advert p
+{
+	font-size : 14px;
+	font-weight : 700;
+	line-height : 14px;
 }
 
 .map
 {
 	position: relative;
-	background-color: transparent;
+	background-color: #e0e0e0;
+	/*background-color: transparent;*/
+	background-image: none;
 }
 
 .map-bg
@@ -121,12 +153,6 @@ body
 	-webkit-backface-visibility: hidden;  /* Fix for transition flickering */
 }
 
-.map-logo
-{
-	position: absolute;
-	left: 190px;
-    top: 20px;
-}
 
 .header .map-cover
 {
@@ -140,22 +166,32 @@ body
 	background-color: transparent;
 }
 
-/*
+
 .logo
 {
-	  width: 141px;
-	  float: left;
+	width: 150px;
+	filter: invert(1);
+	/*  float: left;
 	margin-left: 190px;
-	margin-top: 20px;
+	margin-top: 20px;*/
 }
-*/
+
+.map-logo
+{
+	position: absolute;
+	left: 130px;
+    top: 20px;
+	filter: none;
+}
+
+
 .content
 {
 	width: 940px;
 	/*height: 1495px;*/
 	margin: 0 auto;
 	/*прижимаем футер*/
-	min-height: calc(100vh - 280px);
+	/*min-height: calc(100vh - 280px);*/
 }
 
 .menu-col
@@ -192,10 +228,9 @@ ul
 
 .menu li
 {
-	/*line-height: 36px;*/
-	color: #000000;
 	font-weight: 900;
-	padding: 12px 32px;
+	height: 40px;
+	width: 100%;
 }
 
 .menu a, .menu-top p
@@ -204,7 +239,21 @@ ul
 	text-transform: uppercase;
 }
 
-.menu a:hover li
+.menu a
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+	color: #000000;
+}
+
+.menu a>span
+{
+	padding-left: 32px;
+}
+
+.menu a:hover
 {
 	background-color: #333333;
 	color: white;
@@ -213,7 +262,7 @@ ul
 .menu-throw
 {
 	display: none;
-	width: 250px;
+	width: 260px;
 	position: absolute;
 	top: 80px;
 	left: 216px;
@@ -256,6 +305,27 @@ ul
 	padding-top: 25px;
 	padding-right: 5px;
 	overflow: hidden;
+	/*
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	*/
+	min-height: calc(100vh - 705px);
+}
+
+.main-pg
+{
+	min-height: calc(100vh - 990px);
+}
+
+.catalog-pg
+{
+	min-height: calc(100vh - 775px);
+}
+
+.content-col .wrapper
+{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -295,6 +365,7 @@ ul
 	margin-bottom: 24px;
 	float:left;
 	position: relative;
+	
 }
 
 .content-col .item  a
@@ -317,8 +388,10 @@ ul
 .content-col .item  img
 { 
 	padding: 8px;
-	width: 200px;
+	/*width: 200px;*/
 	height: 188px;
+	display: block;
+	margin: 0 auto;
 }
 
 .content-col .item  h3
@@ -370,13 +443,13 @@ ul
 	display: block;
 	margin-top: 24px;
 	margin-bottom: 24px;
-	width: 297px;
+	/*width: 297px;*/
 	height: 297px;
 }
 
 .item_main_picture
 {
-	width: 297px;
+	/*width: 297px;*/
 	height: 297px;
 	/*padding-right: 36px;*/
 	float:left;
@@ -433,22 +506,27 @@ ul
 
 .button-buy
 {
-	margin: 15px 0px 0px 100px;
-	text-align: center;
-	text-transform: uppercase;
-    display: block;
+	/*text-transform: uppercase;*/
+	background: #fb4d01 linear-gradient(to bottom, #fb4d01, #db2d01) repeat scroll 0 0;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    /*display: inline-block;*/
+    font-size: 14px;
+    margin: 15px 0px 0px 100px;
+    /*padding: 6px 20px;*/
+    text-decoration: none;
+	display: block;
 	width: 105px;
 	height: 39px;
-	background-color: #fb4d01;
-	color: #ffffff;
-	font-size: 14px;
 	font-weight: 400;
 	line-height: 39px;
+	text-align: center;
 }
 
 .button-buy:hover
 {
-	color: gold;
+	background: #fb4d01 linear-gradient(to bottom, #fd5d01, #bd1d01) repeat scroll 0 0;
 }
 
 .hr
@@ -530,7 +608,7 @@ ul
 	margin: 26px 0px 8px 0px;
 }
 
-form
+.form
 {
 	width: 281px;
 	margin-right:18px;
@@ -538,9 +616,10 @@ form
 	float: left;
 }
 
-.footer form
+.news>form
 {
 	margin-right:0px;
+	width: 100%;
 }
 
 .content-col fieldset
@@ -554,7 +633,7 @@ input[type="text"], input[type="email"], textarea
 	font-size: 12px;
 	font-weight: 400;
 	height: 22px;
-	width: 100%;
+	width: 266px;
 	border: 1px solid rgba(167, 167, 167, 0.8);
 	padding-left: 15px;
 }
@@ -563,7 +642,7 @@ textarea
 {
 	display: block;
 	resize: none;
-	width: 100%;
+	width: 266px;
 	height: 121px;
 }
 
@@ -581,6 +660,7 @@ textarea
 	font-weight: 900;
 	line-height: 39px;
 	border: none;
+	cursor: pointer;
 }
 
 .button:hover
@@ -853,7 +933,7 @@ textarea
 .news fieldset input[type="email"]
 {
 	float: left;
-	width: 145px;
+	width: 128px;
 	height: 25px;
 	background-color: #fff51f;
 	border: 0px;

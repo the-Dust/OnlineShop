@@ -1,4 +1,4 @@
-<!docktype html>
+<!doctype html>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -11,102 +11,113 @@
 				<a href="index.htm">
 					<img src="img/logo.png" alt="logo" class="logo"/>
 				</a>
-				<div>
+				<div class="greeting">
 					<h1>Добро пожаловать в EvilStrings</h1>
 					<p>Лучший магазин для покупки любых гитарных струн</p>
 				</div>
+				<!--
+				<div class="advert">
+					<h2>ERNIE BALL 2220 POWER SLINKY</h2>
+					<p>Только в нашем интернет-магазине по невероятно низкой цене 450,00&#8381;</p>
+					<a class="button-buy-ad" href="https://money.yandex.ru/transfer" target="_blank">Купить</a>
+				</div>
+				-->
 			</div>
 			<div class="content">
 				<div class="menu-col">
 					<div class="menu-top"><p>Меню</p></div>
 					<ul class="menu">
-						<a href="index.htm"><li>Главная</li></a>
-						<a href="catalog.htm"><li>Каталог</li></a>
-						<div class="menu-contacts"><a href="contacts.htm"><li>Контакты</li></a>
-							<ul class="menu menu-throw">
-							<a href="contacts.htm"><li>Адрес магазина</li></a>
-							<a href="mailto:dust_@inbox.ru"><li>Написать разработчику</li></a>
-							<a href="the-Dust _ Codewars.htm"><li>Мой код</li></a>
-							</ul>
-						</div>
+						<li><a href="index.htm"><span>Главная</span></a></li>
+						<li><a href="catalog.htm"><span>Каталог</span></a></li>
+						<li>
+							<div class="menu-contacts"><a href="contacts.htm"><span>Контакты</span></a>
+								<ul class="menu menu-throw">
+								<li><a href="contacts.htm"><span>Адрес магазина</span></a></li>
+								<li><a href="mailto:dust_@inbox.ru"><span>Написать разработчику</span></a></li>
+								<li><a href="the-Dust_Codewars.htm"><span>Мой код</span></a></li>
+								</ul>
+							</div>
+						</li>
 					</ul>
 					<div class="hello"><p>Мы открылись!</p></div>
 				</div>
-				<div class="content-col">
-					<h1>Свежие поступления</h1>
-					<div class="item">
-						<a href="page3.htm">
-							<img src="img/acoustic_elixir_id1.jpg" alt="ELIXIR 16152"/>
-							<h3>ELIXIR 16152</h3>
-							<p class="price">1200,00&#8381;</p>
-							<div class="cover"><p>Подробнее</p></div>
-						</a>
-					</div>
-					<div class="item">
-						<a href="page2.htm">
-							<img src="img/bass_dunlop_id1.jpg" alt="DUNLOP DBS50110"/>
-							<h3>DUNLOP DBS50110</h3>
-							<p class="price">2300,00&#8381;</p>
-							<div class="cover"><p>Подробнее</p></div>
-						</a>
-					</div>
-					<div class="item">
-						<a href="page1.htm">
-							<img src="img/electric_ernieball_id1.jpg" alt="ERNIE BALL 2220"/>
-							<h3>ERNIE BALL 2220</h3>
-							<p class="price">450,00&#8381;</p>
-							<div class="cover"><p>Подробнее</p></div>
-						</a>
-					</div>
-					<h1>Лучший товар</h1>
-					<div class="item">
-						<a href="page3.htm">
-							<img src="img/acoustic_elixir_id1.jpg" alt="ELIXIR 16152"/>
-							<h3>ELIXIR 16152</h3>
-							<p class="price">1200,00&#8381;</p>
-							<div class="cover"><p>Подробнее</p></div>
-						</a>
-					</div>
-					<div class="item">
-						<a href="page2.htm">
-							<img src="img/bass_dunlop_id1.jpg" alt="DUNLOP DBS50110"/>
-							<h3>DUNLOP DBS50110</h3>
-							<p class="price">2300,00&#8381;</p>
-							<div class="cover"><p>Подробнее</p></div>
-						</a>
-					</div>
-					<div class="item">
-						<a href="page1.htm">
-							<img src="img/electric_ernieball_id1.jpg" alt="ERNIE BALL 2220"/>
-							<h3>ERNIE BALL 2220</h3>
-							<p class="price">450,00&#8381;</p>
-							<div class="cover"><p>Подробнее</p></div>
-						</a>
-					</div>
-					<h1>Распродажа</h1>
-					<div class="item">
-						<a href="page3.htm">
-							<img src="img/acoustic_elixir_id1.jpg" alt="ELIXIR 16152"/>
-							<h3>ELIXIR 16152</h3>
-							<p class="price">1200,00&#8381;</p>
-							<div class="cover"><p>Подробнее</p></div>
-						</a>
-					</div>
-					<div class="item">
-						<a href="page2.htm">
-							<img src="img/bass_dunlop_id1.jpg" alt="DUNLOP DBS50110"/>
-							<h3>DUNLOP DBS50110</h3>
-							<p class="price">2300,00&#8381;</p>
-							<div class="cover"><p>Подробнее</p></div>
-						</a>
-					</div>
-					<div class="item">
-						<a href="page1.htm">
-							<img src="img/electric_ernieball_id1.jpg" alt="ERNIE BALL 2220"/>
-							<h3>ERNIE BALL 2220</h3>
-							<p class="price">450,00&#8381;</p>
-							<div class="cover"><p>Подробнее</p></div>
-						</a>
+				<div class="content-col main-pg">
+					<div class="wrapper">
+						<h1>Свежие поступления</h1>
+						<div class="item">
+							<a href="page3.htm">
+								<img src="img/acoustic_elixir_id1.jpg" alt="ELIXIR 16152"/>
+								<h3>ELIXIR 16152</h3>
+								<p class="price">1200,00&#8381;</p>
+								<div class="cover"><p>Подробнее</p></div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="page2.htm">
+								<img src="img/bass_dunlop_id1.jpg" alt="DUNLOP DBS50110"/>
+								<h3>DUNLOP DBS50110</h3>
+								<p class="price">2300,00&#8381;</p>
+								<div class="cover"><p>Подробнее</p></div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="page1.htm">
+								<img src="img/electric_ernieball_id1.jpg" alt="ERNIE BALL 2220"/>
+								<h3>ERNIE BALL 2220</h3>
+								<p class="price">450,00&#8381;</p>
+								<div class="cover"><p>Подробнее</p></div>
+							</a>
+						</div>
+						<h1>Топ продаж</h1>
+						<div class="item">
+							<a href="page4.htm">
+								<img src="img/electric_ghs_id1.jpg" alt="GHS ZAKK WYLDE BOOMERS GBZW"/>
+								<h3>GHS ZAKK WYLDE GBZW</h3>
+								<p class="price">550,00&#8381;</p>
+								<div class="cover"><p>Подробнее</p></div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="page5.htm">
+								<img src="img/electric_dr_id1.jpg" alt="DR HI-VOLTAGE DIMEBAG'S DBG-9/50"/>
+								<h3>DR DIMEBAG'S DBG-9/50</h3>
+								<p class="price">700,00&#8381;</p>
+								<div class="cover"><p>Подробнее</p></div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="page6.htm">
+								<img src="img/electric_daddario_id1.jpg" alt="D'ADDARIO PRO STEEL EPS520"/>
+								<h3>D'ADDARIO PRO STEEL EPS520</h3>
+								<p class="price">480,00&#8381;</p>
+								<div class="cover"><p>Подробнее</p></div>
+							</a>
+						</div>
+						<h1>Лучшая цена</h1>
+						<div class="item">
+							<a href="page7.htm">
+								<img src="img/electric_labella_id1.jpg" alt="LA BELLA HARD ROCKIN STEEL DROP SIX HRS-R"/>
+								<h3>LA BELLA SIX HRS-R</h3>
+								<p class="price">510,00&#8381;</p>
+								<div class="cover"><p>Подробнее</p></div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="page8.htm">
+								<img src="img/electric_forte_id1.png" alt="FORTE MY AUTUMN MA 61162"/>
+								<h3>FORTE MY AUTUMN MA&nbsp;61162</h3>
+								<p class="price">420,00&#8381;</p>
+								<div class="cover"><p>Подробнее</p></div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="page9.htm">
+								<img src="img/electric_kerly_id1.jpg" alt="KERLY WICKED WIRE KXW-1046"/>
+								<h3>KERLY KXW-1046</h3>
+								<p class="price">540,00&#8381;</p>
+								<div class="cover"><p>Подробнее</p></div>
+							</a>
+						</div>
 					</div>
 				</div>
 				<div class="instagram">
